@@ -1,0 +1,529 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+/* Set padding to keep content from hitting the edges */
+
+body {
+    /* background: -webkit-linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.500)), url(https://prontocs.co.za/wp-content/uploads/2018/01/shutterstock_572801542.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.500)), url(https://prontocs.co.za/wp-content/uploads/2018/01/shutterstock_572801542.jpg) no-repeat;
+    */
+    background-color:rgba(255, 255, 255, 0.849);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Override the default bootstrap behavior where horizontal description lists
+   will truncate terms that are too long to fit in the left column
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+.container {
+    display: flex;
+}
+main {
+    float: left;
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+}
+
+.content {
+    flex-grow: 1; /* Expand the content section to fill the remaining vertical space */
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+  }
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+    *::selection {
+        background: var(--red);
+        color: #fff;
+    }
+
+
+    .logo {
+    height: 75px;
+    float: left;
+}
+
+.header {
+    background-color: white;
+    padding: 10px;
+    margin-right: 100px;
+    margin-left: 100px;
+    border: 1px solid #ddd;
+    top: 0;
+}
+    .logo::before,
+    .logo::after {
+        position: absolute;
+        font-size: 7em;
+        font-weight: 300;
+        line-height: 0;
+        color: #fff;
+        top: 25px;
+    }
+
+    .logo::before {
+        content: '\00BB';
+        left: 20px;
+    }
+
+    .logo::after {
+        content: '\00AB';
+        left: 34px;
+    }
+
+section {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.fa, .fas {
+    font-weight: 900;
+}
+
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+
+.fa-2x {
+    font-size: 2em;
+}
+
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+ .btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #4477b3;
+    border-color: #4477b3;
+}
+.toggle-btn {
+    width: 35px;
+    position: absolute;
+    right: 80px;
+    top: 40px;
+    display: none;
+    color:black;
+    cursor:pointer
+}
+    .toggle-btn span{
+        display:inline-block;
+        width:100%;
+        height:2px;
+        float:left;
+        margin-bottom:8px;
+        background:white;
+         }
+
+
+    html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        scroll-padding-top: 6rem;
+    }
+.viewBag{
+    font-size:50%;
+    color:white;
+}
+
+
+
+.table {
+    width: 95%;
+    border: 3px solid #ddd;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+th, td, tr {
+    border: 2px solid #ddd;
+    text-align: left;
+    padding: 8px;
+    background-color: #f2f2f2;
+}
+
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2
+    }
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+    input[type=text],
+    input[type=email], input[type=date], input[type=file], input[type=number],
+    select,
+    textarea {
+        width: 100%;
+        padding: 7px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+    }
+
+
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/* h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: rgb(17, 17, 17);
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+} */
+
+h2 {
+    margin-top: 80px;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+    h2:after {
+        display: block;
+        height: 2px;
+        background-color: #1abbec;
+        content: " ";
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    word-spacing: 2px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: white;
+}
+
+/* p {
+    color: white;
+} */
+
+label {
+    font-size: 150%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 130%;
+    line-height: 1.15;
+    margin: 0
+}
+
+.box {
+    padding: 1%;
+}
+
+button, select {
+    text-transform: none
+}
+
+.button-update {
+    background-color: #4477b3;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 100%;
+    border-radius: 5px;
+}
+
+.button-delete {
+    background-color: #cc0000;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 100%;
+    border-radius: 5px;
+}
+
+.button-add {
+    background-color: #4477b3;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+}
+
+.width-4 {
+    grid-column: span 4;
+}
+
+
+/* New styles */
+
+.container div {
+    display: flex;
+}
+
+    .container div input {
+        flex-grow: 1;
+        max-width: 100%;
+    }
+/* ----------------------------------------------- */
+/* Assets */
+/* ----------------------------------------------- */
+
+
+.theframe {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+
+
+@media (max-width: 800px) {
+
+    body {
+        background-size: cover;
+        background: -webkit-linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.500)), url(https://prontocs.co.za/wp-content/uploads/2018/01/shutterstock_572801542.jpg) no-repeat;
+        background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.500)), url(https://prontocs.co.za/wp-content/uploads/2018/01/shutterstock_572801542.jpg) no-repeat;
+        background-repeat: no-repeat;
+    }
+
+    input[type=text],
+    input[type=email], input[type=date], input[type=file], input[type=number],
+    select,
+    textarea {
+        width: 100%;
+        padding: 7px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+    }
+
+        }
+
+
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::selection {
+    background: rgb(0,123,255,0.3);
+}
+section {
+    width: 100%;
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 800px;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    box-sizing: border-box;
+  }
+
+.content1 {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0px 30px;
+    margin-bottom: 50px;
+    float:right;
+}
+
+.menu-list li {
+    list-style: none;
+}
+
+    .menu-list li a {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 25px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+        .menu-list li a:hover {
+            color: #007bff;
+        }
+
+
+.icon {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+    .icon.cancel-btn {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    }
+
+.navbar.sticky .icon.cancel-btn {
+    top: 15px;
+}
+
+@media (max-width: 1240px) {
+    body.disabledScroll {
+        overflow: hidden;
+    }
+
+    .icon {
+        display: block;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        z-index: 9;
+    }
+
+        .icon.cancel-btn {
+            display: none;
+        }
+
+            .icon.cancel-btn.show {
+                display: block;
+            }
+
+        .icon.hide {
+            display: none;
+        }
+
+    .navbar .menu-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background: #222;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
+        transition: all 0.3s ease;
+    }
+
+    .navbar.sticky .menu-list {
+        clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
+        border-top: 1px solid #000;
+    }
+
+    .navbar .menu-list.active {
+        clip-path: circle(75%);
+    }
+
+    .navbar .menu-list li {
+        margin-top: 45px;
+    }
+
+        .navbar .menu-list li a {
+            font-size: 23px;
+        }
+
+    ul ul {
+        top: 100%;
+        left: 0;
+        margin: 0;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.50);
+    }
+    ::selection {
+        background-color: #ffff00; /* Set the background color of selected text */
+        color: #000; /* Set the text color of selected text */
+    }
+
+}

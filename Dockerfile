@@ -22,9 +22,6 @@ RUN apt-get install -y nodejs
 # Install Composer dependencies
 RUN composer install
 
-# Install Node.js dependencies
-RUN npm install
-
 # Build the frontend assets
 RUN npm run dev
 

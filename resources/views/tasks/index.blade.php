@@ -9,32 +9,38 @@
             <label for="user">Filter by User:</label>
             <select name="user" id="user">
                 <option value="">All Users</option>
-                @foreach($users as $user)
-                    <option value="{{ $user->id }}" {{ $user->id == request('user') ? 'selected' : '' }}>
-                        {{ $user->name }}
-                    </option>
+                @foreach($users->sortBy('name') as $user)
+                    @if($user->email !== 'admin@tasks.com')
+                        <option value="{{ $user->id }}" {{ $user->id == request('user') ? 'selected' : '' }}>
+                            {{ $user->name }}
+                        </option>
+                    @endif
                 @endforeach
             </select>
             <button class="button-add" type="submit">Apply Filter</button>
         </form>
         <table>
             <tr>
-                <th>Number</th>
+                {{-- <th>Number</th> --}}
                 <th>Name of Task<a style="text-decoration:none" href="{{ route('tasks.index', ['sort' => 'title']) }}"> sort</a></th>
                 <th>Task details<a style="text-decoration:none" href="{{ route('tasks.index', ['sort' => 'details']) }}"> sort</a></th>
                 <th>Expected completion date<a style="text-decoration:none" href="{{ route('tasks.index', ['sort' => 'finish']) }}"> sort</a></th>
-                {{-- <th>User</th> --}}
+                 {{-- <th>User</th> --}}
                 <th>Progress</th>
-                
+
                 <th>Actions</th>
             </tr>
             @foreach ($tasks as $task)
                 <tr>
-                    <td>{{$task->id}}
+                    {{-- <td>{{$task->id}} --}}
                     <td>{{ $task->title }}</td>
                     <td>{{ $task->details }}</td>
                     <td>{{ $task->finish }}</td>
-                    {{-- <th>{{$user->name}}</td> --}}
+                    <td>
+                        {{-- @if (Auth::user()->id == $task->user_id) --}}
+                        {{-- {{$user->name}}
+                        @endif --}}
+                    </td>
                     <td>
                         @if ($task->completed)
                         <span style="color: green;">&#10004;</span>

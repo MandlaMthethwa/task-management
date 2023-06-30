@@ -15,8 +15,18 @@ RUN apt-get update \
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+# Install Node.js and npm
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+RUN apt-get install -y nodejs
+
 # Install Composer dependencies
 RUN composer install
+
+# Install Node.js dependencies
+RUN npm install
+
+# Build the frontend assets
+RUN npm run dev
 
 # Copy the Apache virtual host configuration file
 COPY apache-site.conf /etc/apache2/sites-available/000-default.conf

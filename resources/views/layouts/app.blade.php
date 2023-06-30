@@ -49,10 +49,10 @@
                                 </li>
                             @endif
 
-                            
+
                         @else
                         @if (Route::has('register'))
-                            @if({{ $user->email}} =='admin@tasks.com')
+                            @if( Auth::user()->email=='admin@tasks.com' )
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register User') }}</a>
                                 </li>

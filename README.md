@@ -1,3 +1,6 @@
+# RESULTS
+https://github.com/MandlaMthethwa/task-management/blob/main/RESULTS.pdf
+
 # Technlogies required
 ### XAMPP (open MySQL and APACHE )
 ### Docker
@@ -23,3 +26,5 @@
  ###   npm install 
  ###   npm run dev 
 ### Acces it http://127.0.0.1:8000/
+
+# Allow the site to access location

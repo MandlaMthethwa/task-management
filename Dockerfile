@@ -35,7 +35,7 @@ COPY apache-site.conf /etc/apache2/sites-available/000-default.conf
 RUN a2enmod rewrite
 
 # Run database migration
-RUN php artisan migrate --force
+RUN php artisan migrate --force --seed
 
 # Set permissions for storage and bootstrap cache folders
 RUN chown -R www-data:www-data storage bootstrap/cache

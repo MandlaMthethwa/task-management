@@ -25,9 +25,7 @@
                 <th>Name of Task<a style="text-decoration:none" href="{{ route('tasks.index', ['sort' => 'title']) }}"> sort</a></th>
                 <th>Task details<a style="text-decoration:none" href="{{ route('tasks.index', ['sort' => 'details']) }}"> sort</a></th>
                 <th>Expected completion date<a style="text-decoration:none" href="{{ route('tasks.index', ['sort' => 'finish']) }}"> sort</a></th>
-                 {{-- <th>User</th> --}}
                 <th>Progress</th>
-
                 <th>Actions</th>
             </tr>
             @foreach ($tasks as $task)
@@ -36,11 +34,7 @@
                     <td>{{ $task->title }}</td>
                     <td>{{ $task->details }}</td>
                     <td>{{ $task->finish }}</td>
-                    <td>
-                        {{-- @if (Auth::user()->id == $task->user_id) --}}
-                        {{-- {{$user->name}}
-                        @endif --}}
-                    </td>
+
                     <td>
                         @if ($task->completed)
                         <span style="color: green;">&#10004;</span>

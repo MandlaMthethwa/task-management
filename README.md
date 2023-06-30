@@ -1,3 +1,6 @@
+# RESULTS
+https://github.com/MandlaMthethwa/task-management/blob/main/RESULTS.pdf
+
 # Technlogies required
 ### XAMPP (open MySQL and APACHE )
 ### Docker

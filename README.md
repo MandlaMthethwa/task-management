@@ -1,13 +1,15 @@
 # Technlogies required
 ### XAMPP (open MySQL and APACHE )
 ### Docker
-# login in with these credentials
+### Node
+# Login in with these credentials
 ### Email: admin@tasks.com
 ### Password: admin123
 
 # RUN DOCKER
 ## Make sure Docker is installed and running
 ### Run the following commands:
+###    npm install 
 ###    docker build -t tasks .
 ###    docker run -p 8000:80 tasks
 ### Access it http://localhost:8080/
